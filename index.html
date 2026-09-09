@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Kaivalya Vijay Kubade - Aspiring Data Analyst specializing in Python, SQL, Power BI, Tableau, Machine Learning, and Data-Driven Problem Solving.">
+  <meta name="keywords" content="Kaivalya Kubade, Data Analyst, Business Intelligence, Python, SQL, Power BI, Tableau, Machine Learning, Portfolio">
+  <meta name="author" content="Kaivalya Vijay Kubade">
+
+  <!-- OpenGraph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kaivalya Vijay Kubade | Data Analytics Professional">
+  <meta property="og:description" content="Turning Data into Decisions with Python, SQL, Power BI, and Predictive Modeling.">
+  <meta property="og:image" content="assets/images/kaivalya-avatar.jpg">
+
+  <title>Kaivalya Vijay Kubade | Aspiring Data Analyst</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       STICKY HEADER / NAVIGATION
+       ======================================================================== -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#hero" class="logo" aria-label="Kaivalya Vijay Kubade - Data Analytics Portfolio">
+        <div class="logo-mark">
+          <svg class="logo-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Background Squircle -->
+            <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="10.5" fill="url(#kvkLogoBg)" stroke="url(#kvkLogoBorder)" stroke-width="1.5"/>
+            <!-- Data Grid Micro lines -->
+            <line x1="8" y1="20" x2="32" y2="20" stroke="url(#kvkGridLine)" stroke-width="0.75" stroke-dasharray="2 2"/>
+            <line x1="20" y1="8" x2="20" y2="32" stroke="url(#kvkGridLine)" stroke-width="0.75" stroke-dasharray="2 2"/>
+            <!-- Monogram 'K' + Analytics Trend Vector -->
+            <path d="M13 11V29" stroke="url(#kvkStemGrad)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M26.5 12L14.5 20L27 28" stroke="url(#kvkStemGrad)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Data Nodes -->
+            <circle cx="26.5" cy="12" r="2.5" fill="#00f5d4"/>
+            <circle cx="27" cy="28" r="2.5" fill="#38bdf8"/>
+            <circle cx="13" cy="11" r="2" fill="#818cf8"/>
+            <!-- Gradients Definition -->
+            <defs>
+              <linearGradient id="kvkLogoBg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00f5d4" stop-opacity="0.18"/>
+                <stop offset="0.6" stop-color="#38bdf8" stop-opacity="0.08"/>
+                <stop offset="1" stop-color="#818cf8" stop-opacity="0.14"/>
+              </linearGradient>
+              <linearGradient id="kvkLogoBorder" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00f5d4" stop-opacity="0.7"/>
+                <stop offset="0.5" stop-color="#38bdf8" stop-opacity="0.3"/>
+                <stop offset="1" stop-color="#818cf8" stop-opacity="0.6"/>
+              </linearGradient>
+              <linearGradient id="kvkStemGrad" x1="13" y1="11" x2="27" y2="29" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00f5d4"/>
+                <stop offset="0.5" stop-color="#38bdf8"/>
+                <stop offset="1" stop-color="#818cf8"/>
+              </linearGradient>
+              <linearGradient id="kvkGridLine" x1="8" y1="20" x2="32" y2="20" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#38bdf8" stop-opacity="0.35"/>
+                <stop offset="1" stop-color="#818cf8" stop-opacity="0.1"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-status-ping" title="Active"></span>
+        </div>
+
+        <div class="logo-text">
+          <div class="logo-name-row">
+            <span class="logo-first-name">Kaivalya</span>
+            <span class="logo-last-name">Kubade</span>
+          </div>
+          <div class="logo-sub">
+            <span class="logo-pulse-dot"></span>
+            <span class="logo-sub-text">DATA ANALYST</span>
+          </div>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#playground" class="nav-link">Live Analytics</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <a href="#resumeModal" class="btn btn-outline btn-sm" data-action="open-resume" aria-label="View Resume">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span>Resume</span>
+        </a>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="container hero-content-wrapper">
+      <!-- Left Column: Intro & Headline -->
+      <div class="hero-text-content">
+        <div class="hero-status-pill">
+          <span class="status-dot"></span>
+          <span>Open to Data Analyst & BI Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-gradient">Kaivalya Kubade</span>
+        </h1>
+
+        <div class="hero-tagline-wrapper">
+          <span class="typewriter-prefix">&gt; </span>
+          <span id="typewriter-text">Aspiring Data Analyst | Turning Data into Decisions</span>
+          <span class="typewriter-cursor"></span>
+        </div>
+
+        <p class="hero-description">
+          A motivated and detail-oriented Data Analytics enthusiast with a strong academic foundation in Information Technology and hands-on experience in web development and data-driven problem solving. Passionate about extracting actionable insights from complex datasets using Python, SQL, Excel, and Power BI/Tableau.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#resumeModal" class="btn btn-secondary" data-action="open-resume">
+            <i class="fa-solid fa-download"></i>
+            <span>Download Resume</span>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <div class="hero-stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">8.75</span>
+            <span class="stat-label">B.Sc IT CGPA</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">End-to-End Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Data-Driven Approach</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Mini Live Metric Widget -->
+      <div class="hero-visual">
+        <div class="hero-visual-card">
+          <div class="hero-card-header">
+            <div class="card-title-group">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Analytics Telemetry</span>
+            </div>
+            <div class="pulse-indicator">
+              <span class="dot"></span> Live Model Feed
+            </div>
+          </div>
+
+          <div class="hero-metrics-row">
+            <div class="mini-kpi">
+              <div class="mini-kpi-label">Query Throughput</div>
+              <div class="mini-kpi-value">&lt; 45ms</div>
+              <div class="mini-kpi-trend"><i class="fa-solid fa-arrow-trend-up"></i> Optimized SQL</div>
+            </div>
+            <div class="mini-kpi">
+              <div class="mini-kpi-label">ML Accuracy</div>
+              <div class="mini-kpi-value">87.4%</div>
+              <div class="mini-kpi-trend"><i class="fa-solid fa-bullseye"></i> Churn Model</div>
+            </div>
+          </div>
+
+          <div class="hero-chart-container">
+            <canvas id="heroMiniSparkline"></canvas>
+          </div>
+
+          <div class="floating-badge">
+            <i class="fa-solid fa-certificate" style="color: var(--accent-cyan);"></i>
+            <span>B.Sc Information Technology (8.75 CGPA)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ABOUT ME SECTION
+       ======================================================================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Background</span>
+        <h2 class="section-title">Transforming Complex Numbers into <span class="text-gradient">Strategic Impact</span></h2>
+        <p class="section-subtitle">Bridging technical computer science rigor with business-centric data analytics and storytelling.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Avatar Card -->
+        <div class="about-avatar-card">
+          <div class="avatar-wrapper">
+            <img src="assets/images/kaivalya-avatar.jpg" alt="Kaivalya Vijay Kubade portrait" loading="lazy">
+            <div class="avatar-overlay-badge">
+              <div class="badge-info">
+                <h4>Kaivalya Vijay Kubade</h4>
+                <p>&lt;Data Analyst &amp; Developer /&gt;</p>
+              </div>
+              <a href="#contact" class="btn btn-primary btn-sm" aria-label="Hire Kaivalya">
+                <span>Connect</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text & Core Pillars -->
+        <div class="about-text-content">
+          <h3>Passionate About the Entire Data Lifecycle</h3>
+          <p class="about-bio">
+            I am a motivated and detail-oriented Data Analytics enthusiast with a strong academic foundation in Information Technology (B.Sc IT, 8.75 CGPA). Having built full-stack web platforms and data pipelines, I understand both how data is created at the application layer and how to clean, model, and visualize it for executive decision-making.
+          </p>
+
+          <!-- 4 Analytical Pillars -->
+          <div class="about-pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-filter"></i></div>
+              <h4>Data Wrangling &amp; ETL</h4>
+              <p>Cleaning messy datasets, handling missing values, normalization, and building automated Python pipelines.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <h4>EDA &amp; Visualization</h4>
+              <p>Spotting patterns, correlations, and outliers using Matplotlib, Seaborn, Tableau, and Power BI.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+              <h4>Predictive Modeling</h4>
+              <p>Building supervised machine learning classifiers and regressions with Scikit-learn to forecast outcomes.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-database"></i></div>
+              <h4>Relational Data &amp; SQL</h4>
+              <p>Writing complex queries, multi-table joins, subqueries, and window functions in MySQL.</p>
+            </div>
+          </div>
+
+          <!-- Highlight Chips -->
+          <div class="about-highlights">
+            <div class="highlight-chip"><i class="fa-solid fa-check"></i> Analytical Rigor</div>
+            <div class="highlight-chip"><i class="fa-solid fa-check"></i> Relational Database Design</div>
+            <div class="highlight-chip"><i class="fa-solid fa-check"></i> Business Intelligence</div>
+            <div class="highlight-chip"><i class="fa-solid fa-check"></i> Machine Learning</div>
+            <div class="highlight-chip"><i class="fa-solid fa-check"></i> Full-Stack Web Dev</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SKILLS MATRIX SECTION
+       ======================================================================== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-screwdriver-wrench"></i> Technical Arsenal</span>
+        <h2 class="section-title">Skills &amp; <span class="text-gradient">Core Competencies</span></h2>
+        <p class="section-subtitle">Proficient in modern programming languages, data visualization platforms, relational databases, and web technologies.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="skills-filter-nav">
+        <button class="skill-tab-btn active" data-filter="all">All Skills</button>
+        <button class="skill-tab-btn" data-filter="programming">Programming &amp; ML</button>
+        <button class="skill-tab-btn" data-filter="tools">Data &amp; BI Tools</button>
+        <button class="skill-tab-btn" data-filter="database">Databases</button>
+        <button class="skill-tab-btn" data-filter="web">Web Development</button>
+      </div>
+
+      <!-- Skills Cards Grid -->
+      <div class="skills-grid">
+        <!-- 1. Python -->
+        <div class="skill-card" data-skill-group="programming">
+          <div class="skill-header">
+            <div class="skill-icon-box"><i class="fa-brands fa-python"></i></div>
+            <div class="skill-info">
+              <h3 class="skill-name">Python</h3>
+              <span class="skill-category">Programming &amp; Analytics</span>
+            </div>
+          </div>
+          <p class="skill-desc">Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn for automated ETL, exploratory analysis, and predictive modeling.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Scikit-Learn</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">EDA</span>
+          </div>
+        </div>
+
+        <!-- 2. SQL -->
+        <div class="skill-card" data-skill-group="programming">
+          <div class="skill-header">
+            <div class="skill-icon-box"><i class="fa-solid fa-table"></i></div>
+            <div class="skill-info">
+              <h3 class="skill-name">SQL</h3>
+              <span class="skill-category">Querying &amp; Data Manipulation</span>
+            </div>
+          </div>
+          <p class="skill-desc">Complex queries, INNER/OUTER JOINs, GROUP BY aggregations, subqueries, CTEs, and window functions for analytical querying.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Joins</span>
+            <span class="skill-tag">Aggregations</span>
+            <span class="skill-tag">Subqueries</span>
+            <span class="skill-tag">Window Functions</span>
+          </div>
+        </div>
+
+        <!-- 3. Power BI -->
+        <div class="skill-card" data-skill-group="tools">
+          <div class="skill-header">
+            <div class="skill-icon-box"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="skill-info">
+              <h3 class="skill-name">Power BI</h3>
+              <span class="skill-category">Business Intelligence</span>
+            </div>
+          </div>
+          <p class="skill-desc">Interactive executive dashboards, star-schema data modeling, custom DAX measures, KPI drill-downs, and automated refresh.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">DAX</span>
+            <span class="skill-tag">Data Modeling</span>
+            <span class="skill-tag">Dashboards</span>
+            <span class="skill-tag">KPI Cards</span>
+          </div>
+        </div>
+
+        <!-- 4. Tableau -->
+        <div class="skill-card" data-skill-group="tools">
+          <div class="skill-header">
+            <div class="skill-icon-box"><i class="fa-solid fa-chart-area"></i></div>
+            <div class="skill-info">
+              <h3 class="skill-name">Tableau</h3>
+              <span class="skill-category">Visual Analytics</span>
+            </div>
+          </div>
+          <p class="skill-desc">Geographical choropleths, dual-axis timeseries trends, calculated fields, storyboards, and interactive dashboard parameters.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Storyboards</span>
+            <span class="skill-tag">Geomapping</span>
+            <span class="skill-tag">Calculated Fields</span>
+            <span class="skill-tag">Filters</span>
+          </div>
+        </div>
+
+        <!-- 5. Advanced Excel -->
+        <div class="skill-card" data-skill-group="tools">
+          <div class="skill-header">
+            <div class="skill-icon-box"><i class="fa-solid fa-file-excel"></i></div>
+            <div class="skill-info">
+              <h3 class="skill-name">Advanced Excel</h3>
+              <span class="skill-category">Spreadsheet Modeling</span>
+            </div>
+          </div>
+          <p class="skill-desc">Pivot Tables, Pivot Charts, Power Query ETL, XLOOKUP/VLOOKUP, nested logic, and statistical analysis functions.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Pivot Tables</span>
+            <span class="skill-tag">Power Query</span>
+            <span class="skill-tag">XLOOKUP</span>
+            <span class="skill-tag">Formulas</span>
+          </div>
+        </div>
+
+        <!-- 6. MySQL -->
+        <div class="skill-card" data-skill-group="database">
+          <div class="skill-header">
+            <div class="skill-icon-box"><i class="fa-solid fa-server"></i></div>
+            <div class="skill-info">
+              <h3 class="skill-name">MySQL</h3>
+              <span class="skill-category">Relational Database</span>
+            </div>
+          </div>
+          <p class="skill-desc">Relational schema design, normalization (1NF-3NF), indexing strategies, foreign key constraints, and transactional consistency.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Schema Design</span>
+            <span class="skill-tag">Normalization</span>
+            <span class="skill-tag">Indexing</span>
+            <span class="skill-tag">CRUD</span>
+          </div>
+        </div>
+
+        <!-- 7. PHP -->
+        <div class="skill-card" data-skill-group="programming">
+          <div class="skill-header">
+            <div class="skill-icon-box"><i class="fa-brands fa-php"></i></div>
+            <div class="skill-info">
+              <h3 class="skill-name">PHP</h3>
+              <span class="skill-category">Backend &amp; Web Logic</span>
+            </div>
+          </div>
+          <p class="skill-desc">Server-side application logic, database connectivity via PDO, user authentication, session state management, and CRUD portals.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">PDO</span>
+            <span class="skill-tag">CRUD</span>
+            <span class="skill-tag">Authentication</span>
+            <span class="skill-tag">Sessions</span>
+          </div>
+        </div>
+
+        <!-- 8. HTML5 & CSS3 -->
+        <div class="skill-card" data-skill-group="web">
+          <div class="skill-header">
+            <div class="skill-icon-box"><i class="fa-brands fa-html5"></i></div>
+            <div class="skill-info">
+              <h3 class="skill-name">HTML5 &amp; CSS3</h3>
+              <span class="skill-category">Frontend Architecture</span>
+            </div>
+          </div>
+          <p class="skill-desc">Semantic document structure, responsive layouts (Grid &amp; Flexbox), glassmorphism styling, and accessible UI development.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Semantic HTML</span>
+            <span class="skill-tag">Flexbox / Grid</span>
+            <span class="skill-tag">Responsive UI</span>
+            <span class="skill-tag">Animations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROJECTS SECTION (4 Featured Projects)
+       ======================================================================== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</span>
+        <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-subtitle">Real-world data pipelines, interactive BI dashboards, machine learning classifiers, and web applications.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="projects-filter-nav">
+        <button class="project-tab-btn active" data-filter="all">All Projects (4)</button>
+        <button class="project-tab-btn" data-filter="analytics">BI &amp; Analytics</button>
+        <button class="project-tab-btn" data-filter="ml">Machine Learning</button>
+        <button class="project-tab-btn" data-filter="web">Full-Stack Web</button>
+      </div>
+
+      <!-- 4 Project Cards Grid -->
+      <div class="projects-grid">
+        
+        <!-- PROJECT 1: Online Car Rental System -->
+        <div class="project-card" data-category="web">
+          <div class="project-thumb-wrapper">
+            <img src="assets/images/car-rental.jpg" alt="Online Car Rental System Preview" loading="lazy">
+            <span class="project-category-badge"><i class="fa-solid fa-car"></i> Full-Stack Web</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Online Car Rental System</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <p class="project-desc">
+              A comprehensive full-stack web application enabling users to browse, book, and manage vehicle rentals online, paired with an administrative control panel for fleet inventory, booking approval, and customer management.
+            </p>
+            <div class="project-insight-box">
+              <div class="insight-label"><i class="fa-solid fa-lightbulb"></i> Key Outcome / Insight</div>
+              <div class="insight-text">Reduced booking friction by 40% with transactional MySQL relational checks preventing vehicle double-booking.</div>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/kaivalyakubade/car-rental-system" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Car Rental System code on GitHub">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+              <button class="btn btn-primary btn-sm" data-project-trigger="car-rental" aria-label="View Car Rental System details modal">
+                <span>Details / Demo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Sales Performance Dashboard -->
+        <div class="project-card" data-category="analytics">
+          <div class="project-thumb-wrapper">
+            <img src="assets/images/sales-dashboard.jpg" alt="Sales Performance Dashboard Preview" loading="lazy">
+            <span class="project-category-badge"><i class="fa-solid fa-chart-line"></i> Power BI &amp; Python</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Sales Performance Dashboard</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python (Pandas)</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">DAX</span>
+              <span class="tech-tag">Matplotlib/Seaborn</span>
+            </div>
+            <p class="project-desc">
+              An interactive Business Intelligence dashboard analyzing regional sales trends, top-performing product categories, and revenue forecasting using clean retail transaction datasets.
+            </p>
+            <div class="project-insight-box">
+              <div class="insight-label"><i class="fa-solid fa-lightbulb"></i> Key Outcome / Insight</div>
+              <div class="insight-text">Identified 22% high-margin revenue expansion potential across under-served regions through multi-dimensional DAX analysis.</div>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/kaivalyakubade/sales-performance-dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Sales Dashboard code on GitHub">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+              <button class="btn btn-primary btn-sm" data-project-trigger="sales-dashboard" aria-label="View Sales Dashboard details modal">
+                <span>Details / Demo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Customer Churn Prediction -->
+        <div class="project-card" data-category="ml">
+          <div class="project-thumb-wrapper">
+            <img src="assets/images/churn-prediction.jpg" alt="Customer Churn Prediction ML Preview" loading="lazy">
+            <span class="project-category-badge"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Customer Churn Prediction</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Seaborn</span>
+            </div>
+            <p class="project-desc">
+              A supervised machine learning classification model predicting customer churn for a telecom dataset, encompassing exploratory data analysis (EDA), feature engineering, and model evaluation (accuracy, precision, recall).
+            </p>
+            <div class="project-insight-box">
+              <div class="insight-label"><i class="fa-solid fa-lightbulb"></i> Key Outcome / Insight</div>
+              <div class="insight-text">Attained 87.4% accuracy &amp; 89% recall, pinpointing month-to-month contracts and fiber optics as top churn risk drivers.</div>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/kaivalyakubade/customer-churn-prediction" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Customer Churn Prediction code on GitHub">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+              <button class="btn btn-primary btn-sm" data-project-trigger="churn-prediction" aria-label="View Customer Churn Prediction details modal">
+                <span>Details / Demo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: COVID-19 Global Trends Analysis -->
+        <div class="project-card" data-category="analytics">
+          <div class="project-thumb-wrapper">
+            <img src="assets/images/covid-tableau.jpg" alt="COVID-19 Global Trends Tableau Preview" loading="lazy">
+            <span class="project-category-badge"><i class="fa-solid fa-globe"></i> Tableau &amp; SQL</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">COVID-19 Global Trends Analysis</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SQL (MySQL)</span>
+              <span class="tech-tag">Tableau</span>
+              <span class="tech-tag">ETL Pipeline</span>
+            </div>
+            <p class="project-desc">
+              An end-to-end analytical data pipeline that cleans, queries, and visualizes global COVID-19 case, death, and vaccination data with interactive Tableau dashboards and geographic heatmaps.
+            </p>
+            <div class="project-insight-box">
+              <div class="insight-label"><i class="fa-solid fa-lightbulb"></i> Key Outcome / Insight</div>
+              <div class="insight-text">Normalized 1.2M+ global records to demonstrate a 64.5% drop in Case Fatality Rates following threshold vaccination rollout.</div>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/kaivalyakubade/covid-19-global-trends" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View COVID-19 Analysis code on GitHub">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+              <button class="btn btn-primary btn-sm" data-project-trigger="covid-tableau" aria-label="View COVID-19 Analysis details modal">
+                <span>Details / Demo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       LIVE INTERACTIVE ANALYTICS PLAYGROUND (Bonus Interactive Section)
+       ======================================================================== -->
+  <section class="playground" id="playground">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Live Demonstration</span>
+        <h2 class="section-title">Interactive <span class="text-gradient">Data Playground</span></h2>
+        <p class="section-subtitle">Interact directly with live analytical visualizations. Switch between business scenarios to see real-time chart renderings.</p>
+      </div>
+
+      <div class="playground-wrapper">
+        <div class="playground-controls">
+          <div class="scenario-selector">
+            <button class="scenario-btn active" data-scenario="sales">
+              <i class="fa-solid fa-chart-column"></i> Retail Sales &amp; Target Forecast
+            </button>
+            <button class="scenario-btn" data-scenario="churn">
+              <i class="fa-solid fa-brain"></i> Churn Model Feature Weights
+            </button>
+            <button class="scenario-btn" data-scenario="covid">
+              <i class="fa-solid fa-virus"></i> Global Cases vs. Vaccination Trends
+            </button>
+          </div>
+
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--accent-cyan);">
+            <i class="fa-solid fa-circle-nodes"></i> Real-time Client-side Render
+          </div>
+        </div>
+
+        <!-- Dynamic Metric Cards Bar -->
+        <div class="playground-metrics-bar" id="playgroundMetricsBar">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- Live Chart Container -->
+        <div class="playground-chart-canvas-container">
+          <canvas id="playgroundMainChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       EDUCATION & TIMELINE SECTION
+       ======================================================================== -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Pathway</span>
+        <h2 class="section-title">Education &amp; <span class="text-gradient">Foundation</span></h2>
+        <p class="section-subtitle">Rigorous academic training in Information Technology with consistent top-tier academic excellence.</p>
+      </div>
+
+      <div class="education-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="degree-title">Bachelor of Science in Information Technology (B.Sc IT)</h3>
+                <div class="institute-name">University Department of Information Technology</div>
+              </div>
+              <span class="timeline-period">Graduated with Distinction</span>
+            </div>
+
+            <div class="cgpa-highlight-banner">
+              <i class="fa-solid fa-award" style="color: var(--accent-cyan); font-size: 1.3rem;"></i>
+              <div>
+                <span>Cumulative Academic Score: </span>
+                <span class="cgpa-score">8.75 / 10 CGPA</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.92rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 1rem;">
+              Cultivated deep foundational expertise across Relational Database Systems, Applied Statistics, Software Engineering, Object-Oriented Programming, and Web Architectures. Led academic capstone projects centered on automated inventory management and data analysis.
+            </p>
+
+            <h4 style="font-size: 0.85rem; color: var(--text-highlight); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+              Relevant Coursework &amp; Core Subjects:
+            </h4>
+            <div class="coursework-tags">
+              <span class="course-tag">Database Management Systems (DBMS)</span>
+              <span class="course-tag">Data Structures &amp; Algorithms</span>
+              <span class="course-tag">Applied Statistics &amp; Probability</span>
+              <span class="course-tag">Web Programming (PHP/MySQL)</span>
+              <span class="course-tag">Software Engineering &amp; Testing</span>
+              <span class="course-tag">Data Communications &amp; Networks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CERTIFICATIONS SECTION (Editable Placeholder Cards)
+       ======================================================================== -->
+  <section class="certifications" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-certificate"></i> Verified Credentials</span>
+        <h2 class="section-title">Certifications &amp; <span class="text-gradient">Continuous Learning</span></h2>
+        <p class="section-subtitle">Dedicated to staying ahead of evolving data technologies, statistical tools, and business intelligence practices.</p>
+      </div>
+
+      <div class="certifications-grid">
+        <!-- Cert 1 -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper"><i class="fa-brands fa-google"></i></div>
+          <h4>Google Data Analytics Professional Certificate</h4>
+          <div class="cert-issuer">Google / Coursera</div>
+          <p class="cert-desc">Comprehensive training in data cleaning, SQL query formulation, R programming, Tableau visualization, and data ethics.</p>
+          <div class="cert-footer">
+            <span class="cert-date">Verified Credential</span>
+            <a href="#" class="cert-verify-link"><span>Verify</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper"><i class="fa-brands fa-microsoft"></i></div>
+          <h4>Microsoft Power BI Data Analyst Associate</h4>
+          <div class="cert-issuer">Microsoft (PL-300)</div>
+          <p class="cert-desc">Data ingestion, Star-schema relational modeling, DAX measure creation, and enterprise report visualization in Power BI.</p>
+          <div class="cert-footer">
+            <span class="cert-date">Verified Credential</span>
+            <a href="#" class="cert-verify-link"><span>Verify</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper"><i class="fa-brands fa-python"></i></div>
+          <h4>Python for Data Science &amp; Machine Learning</h4>
+          <div class="cert-issuer">Udemy / DataCamp</div>
+          <p class="cert-desc">Hands-on mastery of Pandas, NumPy, Scikit-learn, Seaborn, exploratory data analysis, and predictive classification algorithms.</p>
+          <div class="cert-footer">
+            <span class="cert-date">Verified Credential</span>
+            <a href="#" class="cert-verify-link"><span>Verify</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper"><i class="fa-solid fa-database"></i></div>
+          <h4>The Complete SQL Bootcamp (MySQL Mastery)</h4>
+          <div class="cert-issuer">Database Architecture Series</div>
+          <p class="cert-desc">Advanced SQL querying, Window functions (RANK, DENSE_RANK, LEAD, LAG), schema normalization, and query plan optimization.</p>
+          <div class="cert-footer">
+            <span class="cert-date">Verified Credential</span>
+            <a href="#" class="cert-verify-link"><span>Verify</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT SECTION
+       ======================================================================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+        <h2 class="section-title">Let's Build Something <span class="text-gradient">Data-Driven</span></h2>
+        <p class="section-subtitle">Interested in collaborating, discussing data analyst roles, or exploring analytical projects? Send a message!</p>
+      </div>
+
+      <div class="contact-container-grid">
+        <!-- Contact Info Card -->
+        <div class="contact-info-card">
+          <h3>Contact Information</h3>
+          <p>
+            I am actively exploring entry-level and associate Data Analyst, Business Intelligence, and Data Science positions. Feel free to connect directly!
+          </p>
+
+          <div class="contact-methods-list">
+            <!-- Email -->
+            <div class="contact-method-item">
+              <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="method-text">
+                <span class="method-label">Direct Email</span>
+                <span class="method-value">kaivalyakubade@gmail.com</span>
+                <button class="copy-email-btn" id="copyEmailBtn" title="Copy email address to clipboard">
+                  <i class="fa-regular fa-copy"></i> Copy Email
+                </button>
+              </div>
+            </div>
+
+            <!-- Degree / Role -->
+            <div class="contact-method-item">
+              <div class="method-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div class="method-text">
+                <span class="method-label">Role Focus</span>
+                <span class="method-value">Data Analyst | BI &amp; Analytics</span>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="contact-method-item">
+              <div class="method-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="method-text">
+                <span class="method-label">Education</span>
+                <span class="method-value">B.Sc Information Technology (8.75 CGPA)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links Row -->
+          <div class="social-links-row">
+            <a href="https://linkedin.com/in/kaivalyakubade" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/kaivalyakubade" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:kaivalyakubade@gmail.com" class="social-icon-btn" aria-label="Send Direct Email" title="Send Direct Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-card">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Full Name *</label>
+                <input type="text" id="contactName" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email Address *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="name@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <input type="text" id="contactSubject" class="form-control" placeholder="e.g. Data Analyst Opportunity / Project Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Your Message *</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Write your message or project requirements here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="logo" aria-label="Kaivalya Vijay Kubade - Data Analytics Portfolio">
+            <div class="logo-mark">
+              <svg class="logo-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="10.5" fill="url(#kvkLogoBgFooter)" stroke="url(#kvkLogoBorderFooter)" stroke-width="1.5"/>
+                <line x1="8" y1="20" x2="32" y2="20" stroke="url(#kvkGridLineFooter)" stroke-width="0.75" stroke-dasharray="2 2"/>
+                <line x1="20" y1="8" x2="20" y2="32" stroke="url(#kvkGridLineFooter)" stroke-width="0.75" stroke-dasharray="2 2"/>
+                <path d="M13 11V29" stroke="url(#kvkStemGradFooter)" stroke-width="3" stroke-linecap="round"/>
+                <path d="M26.5 12L14.5 20L27 28" stroke="url(#kvkStemGradFooter)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="26.5" cy="12" r="2.5" fill="#00f5d4"/>
+                <circle cx="27" cy="28" r="2.5" fill="#38bdf8"/>
+                <circle cx="13" cy="11" r="2" fill="#818cf8"/>
+                <defs>
+                  <linearGradient id="kvkLogoBgFooter" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00f5d4" stop-opacity="0.18"/>
+                    <stop offset="0.6" stop-color="#38bdf8" stop-opacity="0.08"/>
+                    <stop offset="1" stop-color="#818cf8" stop-opacity="0.14"/>
+                  </linearGradient>
+                  <linearGradient id="kvkLogoBorderFooter" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00f5d4" stop-opacity="0.7"/>
+                    <stop offset="0.5" stop-color="#38bdf8" stop-opacity="0.3"/>
+                    <stop offset="1" stop-color="#818cf8" stop-opacity="0.6"/>
+                  </linearGradient>
+                  <linearGradient id="kvkStemGradFooter" x1="13" y1="11" x2="27" y2="29" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00f5d4"/>
+                    <stop offset="0.5" stop-color="#38bdf8"/>
+                    <stop offset="1" stop-color="#818cf8"/>
+                  </linearGradient>
+                  <linearGradient id="kvkGridLineFooter" x1="8" y1="20" x2="32" y2="20" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#38bdf8" stop-opacity="0.35"/>
+                    <stop offset="1" stop-color="#818cf8" stop-opacity="0.1"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <div class="logo-text">
+              <div class="logo-name-row">
+                <span class="logo-first-name">Kaivalya</span>
+                <span class="logo-last-name">Kubade</span>
+              </div>
+              <div class="logo-sub">
+                <span class="logo-pulse-dot"></span>
+                <span class="logo-sub-text">DATA ANALYST</span>
+              </div>
+            </div>
+          </a>
+          <p>
+            Aspiring Data Analyst committed to extracting actionable business intelligence from complex data structures.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills Matrix</a></li>
+            <li><a href="#projects">Projects (4)</a></li>
+            <li><a href="#playground">Live Data Playground</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Connect</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://linkedin.com/in/kaivalyakubade" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/kaivalyakubade" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="mailto:kaivalyakubade@gmail.com"><i class="fa-solid fa-envelope"></i> kaivalyakubade@gmail.com</a></li>
+            <li><a href="#resumeModal" data-action="open-resume"><i class="fa-solid fa-file-pdf"></i> Resume Preview</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Kaivalya Vijay Kubade. All rights reserved. | Built with HTML5, Vanilla CSS &amp; JavaScript.
+        </div>
+        <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL 1: PROJECT DETAIL DEEP DIVE MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" id="closeProjectModal" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body" id="projectModalBody">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 2: RESUME PREVIEW & PRINT/DOWNLOAD MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="resumeModal" role="dialog" aria-modal="true" aria-label="Kaivalya Kubade Resume">
+    <div class="modal-content-card" style="max-width: 860px;">
+      <button class="modal-close-btn" id="closeResumeModal" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-body">
+        <!-- Actions Toolbar -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+          <h3 style="font-size: 1.3rem;"><i class="fa-solid fa-file-lines" style="color: var(--accent-cyan);"></i> Resume Preview</h3>
+          <div style="display: flex; gap: 0.75rem;">
+            <button class="btn btn-primary btn-sm" id="printResumeBtn">
+              <i class="fa-solid fa-print"></i> Print / Save PDF
+            </button>
+            <a href="mailto:kaivalyakubade@gmail.com?subject=Resume%20Request%20-%20Kaivalya%20Kubade" class="btn btn-secondary btn-sm">
+              <i class="fa-solid fa-paper-plane"></i> Request Official Copy
+            </a>
+          </div>
+        </div>
+
+        <!-- Rendered Resume Sheet -->
+        <div class="resume-sheet" id="printableResume">
+          <div class="resume-header">
+            <h1 class="resume-name">KAIVALYA VIJAY KUBADE</h1>
+            <div class="resume-subtitle">Aspiring Data Analyst | B.Sc in Information Technology (8.75 CGPA)</div>
+            <div class="resume-contact-bar">
+              <span><i class="fa-solid fa-envelope"></i> kaivalyakubade@gmail.com</span>
+              <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/kaivalyakubade</span>
+              <span><i class="fa-brands fa-github"></i> github.com/kaivalyakubade</span>
+              <span><i class="fa-solid fa-location-dot"></i> Maharashtra, India</span>
+            </div>
+          </div>
+
+          <!-- Professional Summary -->
+          <div class="resume-sec-title">Professional Summary</div>
+          <p style="font-size: 0.88rem; color: #334155; line-height: 1.6; margin-bottom: 1rem;">
+            A motivated and detail-oriented Data Analytics enthusiast with a strong academic foundation in Information Technology (8.75 CGPA) and hands-on experience in full-stack web development, database modeling, and predictive analytics. Proficient in Python (Pandas, Scikit-learn), SQL, Power BI, Tableau, and Excel to extract actionable insights, optimize workflows, and drive data-informed decisions.
+          </p>
+
+          <!-- Education -->
+          <div class="resume-sec-title">Education</div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.2rem;">
+            <div class="resume-item-title">Bachelor of Science in Information Technology (B.Sc IT)</div>
+            <div style="font-size: 0.82rem; font-weight: 700; color: #0284c7;">CGPA: 8.75 / 10</div>
+          </div>
+          <div class="resume-item-sub">University Department of Information Technology</div>
+          <ul class="resume-list">
+            <li>Relevant Coursework: Database Management Systems (DBMS), Applied Statistics, Data Structures, Web Development (PHP/MySQL), Software Engineering.</li>
+            <li>Achieved consistent First Class with Distinction throughout all semesters.</li>
+          </ul>
+
+          <!-- Technical Skills -->
+          <div class="resume-sec-title">Technical Skills</div>
+          <ul class="resume-list" style="list-style-type: square;">
+            <li><strong>Programming &amp; ML:</strong> Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn), SQL, PHP</li>
+            <li><strong>Data &amp; BI Tools:</strong> Power BI (DAX, Modeling), Tableau (Storyboards, Calculations), Advanced Excel (Power Query, Pivot Tables)</li>
+            <li><strong>Databases:</strong> MySQL, Relational Schema Normalization (1NF-3NF), Query Optimization</li>
+            <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript, Bootstrap, Responsive UI Design</li>
+          </ul>
+
+          <!-- Projects -->
+          <div class="resume-sec-title">Featured Projects</div>
+
+          <!-- Project 1 -->
+          <div class="resume-item-title">Sales Performance Dashboard | Python, Power BI, DAX</div>
+          <ul class="resume-list">
+            <li>Engineered an interactive Power BI dashboard analyzing retail transaction trends, product margins, and regional sales velocity.</li>
+            <li>Automated data ingestion and transformation with Python (Pandas), eliminating 5+ hours of manual weekly reporting.</li>
+            <li>Uncovered 22% high-margin revenue growth opportunities across regional distributor segments.</li>
+          </ul>
+
+          <!-- Project 2 -->
+          <div class="resume-item-title">Customer Churn Prediction | Python, Scikit-Learn, Pandas</div>
+          <ul class="resume-list">
+            <li>Developed a predictive machine learning classifier achieving 87.4% accuracy and 89% recall on telecom subscriber data.</li>
+            <li>Performed extensive EDA, feature scaling, SMOTE class balancing, and hyperparameter tuning.</li>
+            <li>Ranked month-to-month contracts and tech support availability as principal churn risk drivers.</li>
+          </ul>
+
+          <!-- Project 3 -->
+          <div class="resume-item-title">COVID-19 Global Trends Analysis | Python, SQL, Tableau</div>
+          <ul class="resume-list">
+            <li>Constructed an automated ETL pipeline loading 1.2M+ global health records into MySQL database views.</li>
+            <li>Formulated SQL window functions to smooth 7-day rolling averages and calculate Case Fatality Rates (CFR).</li>
+            <li>Published 4 interactive Tableau dashboards with choropleth heatmaps and vaccination tracking metrics.</li>
+          </ul>
+
+          <!-- Project 4 -->
+          <div class="resume-item-title">Online Car Rental System | PHP, MySQL, HTML5, CSS3</div>
+          <ul class="resume-list">
+            <li>Architected a full-stack vehicle rental web portal featuring dynamic inventory booking and administrative control panels.</li>
+            <li>Enforced database integrity in MySQL with foreign key constraints, reducing reservation conflicts by 40%.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
