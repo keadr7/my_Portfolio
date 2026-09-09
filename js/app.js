@@ -374,6 +374,65 @@ function initResumeModal() {
       window.print();
     });
   }
+
+  // Copy Plain Text Resume
+  const copyBtn = document.getElementById('copyResumeTextBtn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      const textResume = `KAIVALYA VIJAY KUBADE
+Data Analyst & Business Intelligence Specialist
+Email: kaivalyakubade@gmail.com | LinkedIn: linkedin.com/in/kaivalyakubade | GitHub: github.com/keadr7 | Maharashtra, India
+
+========================================
+PROFESSIONAL SUMMARY
+========================================
+Results-driven and detail-oriented Data Analytics professional with a strong academic foundation in Information Technology (8.75 CGPA) and proven expertise in Python, SQL, Power BI, and Tableau. Demonstrated track record in architecting end-to-end business intelligence dashboards, automating ETL pipelines to eliminate 5+ weekly reporting hours, and training predictive machine learning models (87.4% accuracy). Passionate about turning complex raw data into actionable executive insights that optimize performance and drive measurable revenue growth.
+
+========================================
+TECHNICAL COMPETENCIES
+========================================
+- Programming & Querying: Python (Pandas, NumPy), SQL (MySQL), PHP, JavaScript (ES6+)
+- BI & Data Visualization: Power BI (DAX), Tableau, Advanced Excel, Power Query, Interactive Dashboards
+- Machine Learning & Analytics: Scikit-Learn, Predictive Modeling, Classification, Regression, EDA, Seaborn, Matplotlib
+- Databases & Engineering: MySQL (3NF Relational Schemas), ETL Pipelines, Git/GitHub, Jupyter Notebooks
+
+========================================
+FEATURED PROJECTS
+========================================
+1. Sales Performance & Revenue Analytics Dashboard [Power BI, DAX, Python, Power Query]
+- Architected an enterprise Power BI dashboard analyzing sales KPIs, regional profitability, product category margins, and customer retention metrics.
+- Automated end-to-end data transformation with Python and Power Query ETL pipelines, saving 5+ hours weekly in manual reporting.
+- Formulated advanced DAX measures uncovering a 22% high-margin expansion opportunity.
+
+2. Customer Churn Prediction Engine [Python, Scikit-Learn, Pandas, Seaborn]
+- Built and tuned a predictive machine learning pipeline evaluating churn probability across 7,000+ telecom subscriber profiles.
+- Resolved class imbalances using SMOTE, elevating model recall to 89.0% and accuracy to 87.4%.
+- Identified key churn determinants and delivered actionable customer retention strategies.
+
+3. COVID-19 Global Healthcare Trends & Surveillance [SQL, Tableau, Python, ETL]
+- Constructed an automated ETL ingestion pipeline loading 1.2M+ global health records into structured MySQL database tables.
+- Wrote complex SQL window queries to smooth 7-day rolling case averages, infection trajectories, and mortality rates (CFR).
+- Published 4 interactive Tableau visual storyboards with choropleth heatmaps and vaccination trackers.
+
+4. Autonomous Vehicle Rental & Fleet Management System [PHP, MySQL, JavaScript, HTML5/CSS3]
+- Engineered a full-stack vehicle rental web portal featuring automated reservation management, customer billing, and role-based admin controls.
+- Normalized MySQL database architecture (3NF), decreasing reservation double-booking incidents by 40%.
+
+========================================
+EDUCATION
+========================================
+Bachelor of Science in Information Technology (B.Sc. IT) | CGPA: 8.75 / 10.0 (First Class with Distinction)
+University Department of Information Technology (UDIT)
+Key Coursework: Database Management Systems (DBMS), Applied Statistics, Data Warehousing & Mining, Data Structures & Algorithms, Software Engineering.
+`;
+
+      navigator.clipboard.writeText(textResume).then(() => {
+        showToast('Resume plain text copied to clipboard!');
+      }).catch(() => {
+        showToast('Failed to copy. Please select and copy manually.');
+      });
+    });
+  }
 }
 
 // --- 6. Project & Skill Filter Tabs ---
