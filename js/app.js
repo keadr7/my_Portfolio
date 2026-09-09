@@ -186,44 +186,51 @@ function initTypewriter() {
   const target = document.getElementById('typewriter-text');
   if (!target) return;
 
-  const roles = [
-    'Turning Raw Data into Strategic Decisions.',
-    'Building Predictive Machine Learning Models.',
-    'Crafting Interactive Power BI & Tableau Dashboards.',
-    'Transforming Complex Databases into Actionable Insights.'
+  const specializations = [
+    'Data Analytics & Business Intelligence',
+    'Automated ETL Pipelines & Power BI Dashboards',
+    'Predictive Machine Learning & Statistical Modeling',
+    'Turning Complex Raw Data into Strategic Impact'
   ];
 
   let roleIdx = 0;
-  let charIdx = 0;
+  let charIdx = specializations[0].length; // Start with full first text
   let isDeleting = false;
   let typingSpeed = 70;
 
+  // Initial display
+  target.textContent = specializations[0];
+
   function typeLoop() {
-    const currentRole = roles[roleIdx];
+    const currentRole = specializations[roleIdx];
 
     if (isDeleting) {
       target.textContent = currentRole.substring(0, charIdx - 1);
       charIdx--;
-      typingSpeed = 35;
+      typingSpeed = 30;
     } else {
       target.textContent = currentRole.substring(0, charIdx + 1);
       charIdx++;
-      typingSpeed = 75;
+      typingSpeed = 65;
     }
 
     if (!isDeleting && charIdx === currentRole.length) {
-      typingSpeed = 2200; // Pause at end of text
+      typingSpeed = 2600; // Generous pause at full display
       isDeleting = true;
     } else if (isDeleting && charIdx === 0) {
       isDeleting = false;
-      roleIdx = (roleIdx + 1) % roles.length;
-      typingSpeed = 400;
+      roleIdx = (roleIdx + 1) % specializations.length;
+      typingSpeed = 400; // Brief pause before starting next word
     }
 
     setTimeout(typeLoop, typingSpeed);
   }
 
-  typeLoop();
+  // Initial delay before first deletion
+  setTimeout(() => {
+    isDeleting = true;
+    typeLoop();
+  }, 2200);
 }
 
 // --- 4. Project Modal Controller ---
