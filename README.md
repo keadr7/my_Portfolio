@@ -50,5 +50,7 @@ A modern, responsive, high-performance portfolio website showcasing projects, in
 
 **Kaivalya Vijay Kubade**
 - **Role**: Aspiring Data Analyst
+- **Email**: [kubadekaivalya@gmail.com](mailto:kubadekaivalya@gmail.com)
+- **Phone**: [+91 96235 58839](tel:+919623558839)
+- **LinkedIn**: [Kaivalya Kubade](https://www.linkedin.com/in/kaivalya-kubade-4769a7370/)
 - **GitHub**: [@keadr7](https://github.com/keadr7)
-- **LinkedIn**: [Kaivalya Kubade](https://www.linkedin.com)

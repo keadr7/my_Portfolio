@@ -10,7 +10,7 @@ const projectDataStore = {
     badge: 'Web App & Inventory System',
     tech: ['PHP', 'HTML5', 'CSS3', 'MySQL', 'JavaScript', 'Bootstrap'],
     image: 'assets/images/car-rental.jpg',
-    github: 'https://github.com/kaivalyakubade/car-rental-system',
+    github: 'https://github.com/keadr7/car-rental-system',
     live: '#',
     summary: 'A robust, full-stack car rental booking and fleet management system built with PHP and MySQL.',
     description: 'Designed and implemented an end-to-end web portal enabling customers to search, compare, and reserve vehicles seamlessly. Built a comprehensive administrative control panel for real-time fleet inventory tracking, reservation approvals, customer billing, and vehicle maintenance status management.',
@@ -34,7 +34,7 @@ const projectDataStore = {
     badge: 'Power BI & Python ETL',
     tech: ['Python', 'Pandas', 'Power BI', 'DAX', 'Matplotlib', 'Seaborn', 'Excel'],
     image: 'assets/images/sales-dashboard.jpg',
-    github: 'https://github.com/kaivalyakubade/sales-performance-dashboard',
+    github: 'https://github.com/keadr7/sales-performance-dashboard',
     live: '#',
     summary: 'An interactive executive Business Intelligence dashboard analyzing retail sales trends, profit margins, and predictive revenue.',
     description: 'Developed an end-to-end data analytics workflow ingesting multi-year retail transactions. Cleaned and transformed raw CSV/Excel dumps using Python Pandas, calculated custom DAX metrics in Power BI, and constructed interactive visual dashboards for executive decision-makers.',
@@ -58,7 +58,7 @@ const projectDataStore = {
     badge: 'Python & Scikit-Learn',
     tech: ['Python', 'Scikit-Learn', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'XGBoost'],
     image: 'assets/images/churn-prediction.jpg',
-    github: 'https://github.com/kaivalyakubade/customer-churn-prediction',
+    github: 'https://github.com/keadr7/customer-churn-prediction',
     live: '#',
     summary: 'Supervised machine learning model identifying at-risk telecom subscribers before contract expiration.',
     description: 'Conducted rigorous exploratory data analysis (EDA), feature engineering, collinearity detection, and hyperparameter tuning across multiple ML classification algorithms (Logistic Regression, Random Forest, XGBoost) on customer demographic and usage data.',
@@ -82,7 +82,7 @@ const projectDataStore = {
     badge: 'Python, SQL & Tableau',
     tech: ['Python', 'SQL (MySQL)', 'Tableau', 'Pandas', 'Data Cleaning', 'ETL'],
     image: 'assets/images/covid-tableau.jpg',
-    github: 'https://github.com/kaivalyakubade/covid-19-global-trends',
+    github: 'https://github.com/keadr7/covid-19-global-trends',
     live: '#',
     summary: 'End-to-end data pipeline querying and visualizing global COVID-19 epidemiological metrics and vaccination trends.',
     description: 'Ingested raw global timeseries data from Johns Hopkins & Our World in Data, executed data cleansing in Python, loaded transformed records into MySQL relational schemas, and engineered public Tableau dashboards with interactive map visualizations.',
@@ -381,7 +381,7 @@ function initResumeModal() {
     copyBtn.addEventListener('click', () => {
       const textResume = `KAIVALYA VIJAY KUBADE
 Data Analyst & Business Intelligence Specialist
-Email: kaivalyakubade@gmail.com | LinkedIn: linkedin.com/in/kaivalyakubade | GitHub: github.com/keadr7 | Maharashtra, India
+Email: kubadekaivalya@gmail.com | Phone: +91 96235 58839 | LinkedIn: https://www.linkedin.com/in/kaivalya-kubade-4769a7370/ | GitHub: https://github.com/keadr7 | Maharashtra, India
 
 ========================================
 PROFESSIONAL SUMMARY
@@ -524,7 +524,7 @@ function initCopyEmail() {
   if (!copyBtn) return;
 
   copyBtn.addEventListener('click', () => {
-    const email = 'kaivalyakubade@gmail.com';
+    const email = 'kubadekaivalya@gmail.com';
     navigator.clipboard.writeText(email).then(() => {
       showToast('Email copied to clipboard: ' + email);
       const originalHtml = copyBtn.innerHTML;
@@ -582,7 +582,7 @@ function initContactForm() {
     }
 
     // Trigger user mailto client
-    const mailtoUrl = `mailto:kaivalyakubade@gmail.com?subject=${encodeURIComponent(subject + ' - via Portfolio from ' + name)}&body=${encodeURIComponent(message + '\n\n---\nSender Email: ' + email)}`;
+    const mailtoUrl = `mailto:kubadekaivalya@gmail.com?subject=${encodeURIComponent(subject + ' - via Portfolio from ' + name)}&body=${encodeURIComponent(message + '\n\n---\nSender Email: ' + email)}`;
     window.location.href = mailtoUrl;
 
     showToast('Opening your email client... Thank you for reaching out!');
